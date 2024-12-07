@@ -1,6 +1,18 @@
-import java.time.LocalDateTime;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
+/**
+ * Main class to test the utility methods in the DateTimeUtils class.
+ * 
+ * <p>This class includes tests for:</p>
+ * <ul>
+ *   <li>Getting the current date and time</li>
+ *   <li>Converting a LocalDateTime to an ISO 8601 UTC string</li>
+ *   <li>Calculating the number of days between two dates</li>
+ * </ul>
+ * 
+ * <p>Note: The source code for this class is also decompiled from a .class file using the FernFlower decompiler.</p>
+ */
 public class Main {
     public static void main(String[] args) {
         // Test 1: Test if the current date and time is returned correctly
@@ -28,4 +40,3 @@ public class Main {
         System.out.println("All tests passed!");
     }
 }
-
