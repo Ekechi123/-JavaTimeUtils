@@ -36,8 +36,10 @@ public class DateTimeUtils {
      * @return The ISO 8601 UTC string representation of the input date in the format "yyyy-MM-dd'T'HH:mm:ss'Z'".
      */
     public static String convertToISO8601UTC(LocalDateTime date) {
-        DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
-        return date.atOffset(ZoneOffset.UTC).format(formatter) + "Z";  // Add 'Z' for UTC time zone
+        // Use a custom DateTimeFormatter to ensure correct formatting
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'");
+        // Convert the LocalDateTime to UTC and format it as a string
+        return date.atOffset(ZoneOffset.UTC).format(formatter);  // Use UTC offset and format as required
     }
 
     /**
