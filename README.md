@@ -16,3 +16,13 @@ Requirements:
 Test-First: Write unit tests before implementing functions.
 Git Workflow: Commit after each step—tests, function, and documentation.
 Documentation: Provide clear code comments explaining the functions.
+
+How to Run
+
+1. Clone the Repository
+git clone https://github.com/your-username/DateTimeUtils.git
+2. Compile the Java Files
+javac DateTimeUtils.java DateTimeUtilsTest.java Main.java
+3. Run the Tests
+java DateTimeUtilsTest
+
